@@ -1,6 +1,8 @@
+import 'package:calculator_app/components/roundButton.dart';
 import 'package:calculator_app/constants.dart';
 import 'package:calculator_app/screens/calculator_brain.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 
 class CalculatorPage extends StatefulWidget {
   @override
@@ -52,7 +54,19 @@ class _CalculatorPageState extends State<CalculatorPage> {
                 flex: 1,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [],
+                  children: [
+                    RountButton(
+                      buttonText: "AC",
+                      colorsText: kBlackColorsText,
+                      buttonBoxShape: NeumorphicBoxShape.circle(),
+                      buttonWidth: 8,
+                      onPressed: () {
+                        setState(() {
+                          result = calc.buttonPressed("AC");
+                        });
+                      },
+                    )
+                  ],
                 ))
           ],
         ),
