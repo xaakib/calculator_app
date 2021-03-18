@@ -59,6 +59,6 @@ class CalculatorBrain {
       isPressedPercentageButton = false;
       print(operator);
       _output = "";
-    }
+    } else if (buttonText == ".") {}
   }
 }
