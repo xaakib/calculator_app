@@ -65,9 +65,237 @@ class _CalculatorPageState extends State<CalculatorPage> {
                           result = calc.buttonPressed("AC");
                         });
                       },
-                    )
+                    ),
+                    RountButton(
+                      buttonText: "+/-",
+                      colorsText: kBlackColorsText,
+                      buttonBoxShape: NeumorphicBoxShape.circle(),
+                      buttonWidth: 8,
+                      onPressed: () {
+                        setState(() {
+                          result = calc.buttonPressed("AC");
+                        });
+                      },
+                    ),
+                    RountButton(
+                      buttonText: "%",
+                      colorsText: kBlackColorsText,
+                      buttonBoxShape: NeumorphicBoxShape.circle(),
+                      buttonWidth: 8,
+                      onPressed: () {
+                        setState(() {
+                          result = calc.buttonPressed("%");
+                        });
+                      },
+                    ),
+                    RountButton(
+                      buttonText: "/",
+                      colorsText: kOrangeColorsText,
+                      buttonBoxShape: NeumorphicBoxShape.circle(),
+                      buttonWidth: 8,
+                      onPressed: () {
+                        setState(() {
+                          result = calc.buttonPressed("/");
+                        });
+                      },
+                    ),
                   ],
-                ))
+                )),
+            Expanded(
+                flex: 1,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    RountButton(
+                      buttonText: "7",
+                      colorsText: kBlackColorsText,
+                      buttonBoxShape: NeumorphicBoxShape.circle(),
+                      buttonWidth: 8,
+                      onPressed: () {
+                        setState(() {
+                          result = calc.buttonPressed("7");
+                        });
+                      },
+                    ),
+                    RountButton(
+                      buttonText: "8",
+                      colorsText: kBlackColorsText,
+                      buttonBoxShape: NeumorphicBoxShape.circle(),
+                      buttonWidth: 8,
+                      onPressed: () {
+                        setState(() {
+                          result = calc.buttonPressed("8");
+                        });
+                      },
+                    ),
+                    RountButton(
+                      buttonText: "9",
+                      colorsText: kBlackColorsText,
+                      buttonBoxShape: NeumorphicBoxShape.circle(),
+                      buttonWidth: 8,
+                      onPressed: () {
+                        setState(() {
+                          result = calc.buttonPressed("9");
+                        });
+                      },
+                    ),
+                    RountButton(
+                      buttonText: "x",
+                      colorsText: kOrangeColorsText,
+                      buttonBoxShape: NeumorphicBoxShape.circle(),
+                      buttonWidth: 8,
+                      onPressed: () {
+                        setState(() {
+                          result = calc.buttonPressed("x");
+                        });
+                      },
+                    ),
+                  ],
+                )),
+            Expanded(
+                flex: 1,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    RountButton(
+                      buttonText: "4",
+                      colorsText: kBlackColorsText,
+                      buttonBoxShape: NeumorphicBoxShape.circle(),
+                      buttonWidth: 8,
+                      onPressed: () {
+                        setState(() {
+                          result = calc.buttonPressed("4");
+                        });
+                      },
+                    ),
+                    RountButton(
+                      buttonText: "5",
+                      colorsText: kBlackColorsText,
+                      buttonBoxShape: NeumorphicBoxShape.circle(),
+                      buttonWidth: 8,
+                      onPressed: () {
+                        setState(() {
+                          result = calc.buttonPressed("5");
+                        });
+                      },
+                    ),
+                    RountButton(
+                      buttonText: "6",
+                      colorsText: kBlackColorsText,
+                      buttonBoxShape: NeumorphicBoxShape.circle(),
+                      buttonWidth: 8,
+                      onPressed: () {
+                        setState(() {
+                          result = calc.buttonPressed("6");
+                        });
+                      },
+                    ),
+                    RountButton(
+                      buttonText: "-",
+                      colorsText: kOrangeColorsText,
+                      buttonBoxShape: NeumorphicBoxShape.circle(),
+                      buttonWidth: 8,
+                      onPressed: () {
+                        setState(() {
+                          result = calc.buttonPressed("-");
+                        });
+                      },
+                    ),
+                  ],
+                )),
+            Expanded(
+                flex: 1,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    RountButton(
+                      buttonText: "1",
+                      colorsText: kBlackColorsText,
+                      buttonBoxShape: NeumorphicBoxShape.circle(),
+                      buttonWidth: 8,
+                      onPressed: () {
+                        setState(() {
+                          result = calc.buttonPressed("1");
+                        });
+                      },
+                    ),
+                    RountButton(
+                      buttonText: "2",
+                      colorsText: kBlackColorsText,
+                      buttonBoxShape: NeumorphicBoxShape.circle(),
+                      buttonWidth: 8,
+                      onPressed: () {
+                        setState(() {
+                          result = calc.buttonPressed("2");
+                        });
+                      },
+                    ),
+                    RountButton(
+                      buttonText: "3",
+                      colorsText: kBlackColorsText,
+                      buttonBoxShape: NeumorphicBoxShape.circle(),
+                      buttonWidth: 8,
+                      onPressed: () {
+                        setState(() {
+                          result = calc.buttonPressed("3");
+                        });
+                      },
+                    ),
+                    RountButton(
+                      buttonText: "+",
+                      colorsText: kOrangeColorsText,
+                      buttonBoxShape: NeumorphicBoxShape.circle(),
+                      buttonWidth: 8,
+                      onPressed: () {
+                        setState(() {
+                          result = calc.buttonPressed("+");
+                        });
+                      },
+                    ),
+                  ],
+                )),
+            Expanded(
+                flex: 1,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    RountButton(
+                      buttonBoxShape: NeumorphicBoxShape.roundRect(
+                        BorderRadius.circular(40.0),
+                      ),
+                      buttonText: "0",
+                      colorsText: kBlackColorsText,
+                      buttonWidth: 2.9,
+                      onPressed: () {
+                        setState(() {
+                          result = calc.buttonPressed("0");
+                        });
+                      },
+                    ),
+                    RountButton(
+                      buttonText: ".",
+                      colorsText: kBlackColorsText,
+                      buttonBoxShape: NeumorphicBoxShape.circle(),
+                      buttonWidth: 8,
+                      onPressed: () {
+                        setState(() {
+                          result = calc.buttonPressed(".");
+                        });
+                      },
+                    ),
+                    RountButton(
+                      buttonText: "=",
+                      colorsText: kOrangeColorsText,
+                      buttonBoxShape: NeumorphicBoxShape.circle(),
+                      buttonWidth: 8,
+                      onPressed: () {
+                        setState(() {
+                          result = calc.buttonPressed("=");
+                        });
+                      },
+                    ),
+                  ],
+                )),
           ],
         ),
       )),
