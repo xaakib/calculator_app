@@ -59,6 +59,52 @@ class CalculatorBrain {
       isPressedPercentageButton = false;
       print(operator);
       _output = "";
-    } else if (buttonText == ".") {}
+    } else if (buttonText == ".") {
+      if (_output.contains(".")) {
+        print("Already contains a decimals");
+        _output = _output + '';
+        output = _output;
+        resultOperationText = output;
+      } else {
+        _output = _output + buttonText;
+        output = _output;
+        resultOperationText = output;
+      }
+    } else if (buttonText == "=") {
+      isPressedPercentageButton = true;
+      if (output.contains('.')) {
+        num2 = double.parse(output);
+      } else {
+        num2 = int.parse(output);
+      }
+      if (operator == "+") {
+        _output = (num1 + num2).toString();
+      }
+      if (operator == "-") {
+        _output = (num1 - num2).toString();
+      }
+      if (operator == "x") {
+        _output = (num1 * num2).toString();
+      }
+      if (operator == "/") {
+        _output = (num1 / num2).toString();
+      }
+      num1 = 0;
+      num2 = 0;
+      operator = "";
+      if (_output.contains('.')) {
+        output = double.parse(_output).toString();
+      } else {
+        output = _output;
+      }
+      resultOperationText = '';
+      _output = '';
+    } else {
+      _output = _output + buttonText;
+      output = _output;
+      resultOperationText = resultOperationText + buttonText;
+    }
+    print(output);
+    return output;
   }
 }
