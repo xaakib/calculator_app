@@ -18,6 +18,19 @@ class CalculatorBrain {
       resultOperationText = '';
       isPressedPercentageButton = true;
       return output;
+    } else if (buttonText == "+/-") {
+      isPressedPercentageButton = true;
+      if (_output.contains("-", 0)) {
+        print("Already contains a minus");
+        _output = _output + '';
+        output = _output;
+        resultOperationText = output;
+      } else {
+        _output = '-' + _output;
+        output = _output;
+        resultOperationText = output;
+      }
+      return output;
     }
   }
 }
