@@ -61,7 +61,7 @@ flutter:
       fonts:
         - asset: fonts/PTSans-Regular.ttf
 
-    - family: PTSans
+    - family: MontserratLight
       fonts:
         - asset: fonts/Montserrat-Light.ttf
 
