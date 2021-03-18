@@ -296,6 +296,9 @@ class _CalculatorPageState extends State<CalculatorPage> {
                     ),
                   ],
                 )),
+            SizedBox(
+              height: 20,
+            ),
           ],
         ),
       )),
