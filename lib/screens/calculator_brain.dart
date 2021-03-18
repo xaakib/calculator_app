@@ -31,6 +31,34 @@ class CalculatorBrain {
         resultOperationText = output;
       }
       return output;
+    } else if (buttonText == "%") {
+      if (isPressedPercentageButton) {
+        if (output.contains('.')) {
+          num1 = double.parse(output);
+        } else {
+          num1 = int.parse(output);
+        }
+        _output = (num1 / 100).toString();
+        output = _output;
+        _output = '';
+        num1 = 0;
+        resultOperationText = output;
+        return output;
+      }
+    } else if (buttonText == "+" ||
+        buttonText == "-" ||
+        buttonText == "+" ||
+        buttonText == "x") {
+      if (output.contains('.')) {
+        num1 = double.parse(output);
+      } else {
+        num1 = double.parse(output);
+      }
+      operator = buttonText;
+      resultOperationText = operator;
+      isPressedPercentageButton = false;
+      print(operator);
+      _output = "";
     }
   }
 }
